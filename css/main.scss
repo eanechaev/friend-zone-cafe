@@ -151,33 +151,6 @@ textarea {
     -ms-flex: 0 1 40%;
     flex: 0 1 40%;
 }
-   
-@media (max-width:800px) {
-    // .col {
-    //  -webkit-box-flex: 0;
-    //  -ms-flex: 0 1 100%;
-    //  flex: 0 1 100%;
-    // }
-   
-    .col+.col {
-     margin-top: 1.5em;
-    }
-}
-
-@media (max-width:800px) {
-    body {
-        font-size: 2vw;
-    }
-    header {
-        z-index: 2000;
-    }
-    .about, .blog {
-        margin: auto;
-    }
-    .row-center {
-        margin: -8em 0em;
-    }
-}
 
 .logo {
     font-size: 1.33em;
@@ -393,12 +366,6 @@ $col) {
     max-width: 3em;
 }
    
-@media (max-width: 800px) {
-    .media {
-     padding-bottom: 80%;
-    }
-}
-   
 .media img {
     position: absolute;
     display: block;
@@ -476,13 +443,7 @@ $col) {
     overflow-y: auto;
     text-align: center;
 }
-   
-@media (max-width: 600px) {
-    .modal {
-     max-width: 80%;
-     margin: 10vmin auto auto auto;
-    }
-   }
+
    
 .modal__close {
     position: absolute;
@@ -574,13 +535,6 @@ $col) {
     text-align: center;
 }
    
-@media (max-width: 600px) {
-    .modal {
-     max-width: 80%;
-     margin: 10vmin auto auto auto;
-    }
-}
-   
 .modal__close {
     position: absolute;
     top: 8px;
@@ -615,4 +569,46 @@ $col) {
 .modal__input:focus,
 .modal__input:active {
     border: 1px solid #111;
+}
+
+   
+@media (max-width:800px) {
+    .col {
+     -webkit-box-flex: 0;
+     -ms-flex: 0 1 100%;
+     flex: 0 1 100%;
+    }
+   
+    .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .col+.col {
+     margin-top: 8.5rem;
+    }
+
+    body {
+        font-size: 5vw;
+    }
+    header {
+        z-index: 2000;
+    }
+    nav {
+        display: none;
+    }
+
+    .about, .blog {
+        margin: auto;
+    }
+    .row-center {
+        margin: -4em 0em 0em;
+        z-index: 1;
+    }
+    .modal {
+        max-width: 80%;
+        margin: 10vmin auto auto auto;
+    }
+    .media {
+        max-width: 85%;
+    }
 }
