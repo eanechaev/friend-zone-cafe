@@ -616,4 +616,8 @@ $col) {
         max-width: 65%;
         padding-bottom: 1px;
     }
+    .shadow {
+        -webkit-filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.3));
+        filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.3));
+    }
 }

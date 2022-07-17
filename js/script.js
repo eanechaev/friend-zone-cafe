@@ -2,7 +2,7 @@ const man = document.querySelector('.media');
 
 man.addEventListener('click', () => {
  let i = getRandomInt(16);
- man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="drinking">';
+ man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="random funny image">';
 });
 
 function getRandomInt(max) {
