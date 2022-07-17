@@ -571,7 +571,11 @@ $col) {
     border: 1px solid #111;
 }
 
-   
+.shadow {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(3px 2px 1px rgba(0,0,0,0.5));
+}
+
 @media (max-width:800px) {
     .col {
      -webkit-box-flex: 0;
@@ -588,7 +592,7 @@ $col) {
     }
 
     body {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
     header {
         z-index: 2000;
@@ -609,6 +613,7 @@ $col) {
         margin: 10vmin auto auto auto;
     }
     .media {
-        max-width: 85%;
+        max-width: 65%;
+        padding-bottom: 1px;
     }
 }
