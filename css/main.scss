@@ -187,6 +187,9 @@ nav a {
 
 .about, .blog {
     margin: 0em 0.5em;
+    &:hover {
+        color: blue;
+    }
 }
 
 .blue {
@@ -576,6 +579,41 @@ $col) {
     filter: drop-shadow(3px 2px 1px rgba(0,0,0,0.5));
 }
 
+// about
+
+.about_h1 {
+    font-size: 1.3rem;
+}
+
+.about_subsection {
+    max-width: 780px;
+    margin-top: 20px;
+    p {
+        margin-top: 3px;
+        font-size: 0.8rem;
+    }
+}
+
+.about_h3 {
+    font-size: 1rem;
+    span {
+        color: #0A36CF;
+    }
+}
+
+.about_container {
+    display: flex;
+}
+
+.about_media {
+    margin-top: 50px;
+}
+
+.about_media_phone {
+    display: none;
+}
+
+
 @media (max-width:800px) {
     .col {
      -webkit-box-flex: 0;
@@ -620,4 +658,15 @@ $col) {
         -webkit-filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.3));
         filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.3));
     }
+
+    .about_media {
+        display: none;
+    }
+
+    .about_media_phone {
+        margin-top: 200px;
+        display: block;
+        position: absolute;
+    }
+
 }
