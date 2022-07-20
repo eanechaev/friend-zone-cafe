@@ -682,6 +682,7 @@ $col) {
     }
 
     .about_media_phone {
+        z-index: -2000;
         margin-top: 200px;
         display: block;
         position: fixed;
