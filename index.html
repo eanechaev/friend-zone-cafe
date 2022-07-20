@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Просто закупки</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicons/drinking_man.ico">
+    <script src="https://kit.fontawesome.com/8bbff8f4a8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -15,10 +17,10 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <a href="/index.html" class="logo">Просто <u>закупки</u></a>
+                    <a href="/pro_zakupki/index.html" class="logo">Просто <u>закупки</u></a>
                     <nav>
-                        <a class="about" href="/about.html">О проекте</a>
-                        <a class="blog" href="/blog.html">Блог</a>
+                        <a class="about" href="/pro_zakupki/about.html">О проекте</a>
+                        <a class="blog" href="/pro_zakupki/blog.html">Блог</a>
                         <button class="btn btn-modal" type="button">Предложить тему</button>
                     </nav>
                 </div>
@@ -58,9 +60,18 @@
          <div class="modal__close">&times;</div>
          <form action="#" method="POST">
           <h3 class="modal__title">Нам искренне интересно узнать Ваше мнение, замечания или предложения</h3>
-          <input required placeholder="Любые контакты" name="name" type="text" class="modal__input">
+          <div class="modal_links">
+            <div class="telegram_link">
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <h6>в Telegram</h6>
+            </div>
+            <div class="mail_link">
+                <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                <h6>или по почте</h6>
+            </div>
+          <!-- <input required placeholder="Любые контакты" name="name" type="text" class="modal__input">
           <textarea required placeholder="Ваши слова" name="message" class="modal__input"></textarea>
-          <button class="btn shadow">отправить</button>
+          <button class="btn shadow">отправить</button> -->
          </form>
          <!-- <div class="modal__body">
          </div> -->

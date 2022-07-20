@@ -1,14 +1,15 @@
-const man = document.querySelector('.media');
+if (document.body.contains(document.querySelector('.media'))) {
+    const man = document.querySelector('.media');
 
-man.addEventListener('click', () => {
- let i = getRandomInt(16);
- man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="random funny image">';
-});
-
-function getRandomInt(max) {
- return Math.floor(Math.random() * max);
-}
-
+    man.addEventListener('click', () => {
+     let i = getRandomInt(17);
+     man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="random funny image">';
+    });
+    
+    function getRandomInt(max) {
+     return Math.floor(Math.random() * max);
+    }
+};
 
 // MODAL
 
@@ -17,7 +18,7 @@ const MODAL_TRIGGER = document.querySelector('.btn-modal'),
       MODAL_CLOSE = document.querySelector('.modal__close');
 
 
-console.log(MODAL_TRIGGER);
+// console.log(MODAL_TEXT_TRIGGER);
 
 MODAL_TRIGGER.addEventListener('click', (e) => {
     console.log(e.target);
@@ -45,3 +46,16 @@ document.addEventListener('keydown', (e) => {
   closeModal(MODAL);
  }
 });
+
+// 
+
+if (document.body.contains(document.querySelector('.join_us'))) {
+    const MODAL_TEXT_TRIGGER = document.querySelector('.join_us');
+
+    MODAL_TEXT_TRIGGER.addEventListener('click', (e) => {
+        console.log(e.target);
+        MODAL.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
