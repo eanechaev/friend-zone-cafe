@@ -47,7 +47,7 @@ document.addEventListener('keydown', (e) => {
  }
 });
 
-// 
+// join us text
 
 if (document.body.contains(document.querySelector('.join_us'))) {
     const MODAL_TEXT_TRIGGER = document.querySelector('.join_us');
@@ -59,3 +59,40 @@ if (document.body.contains(document.querySelector('.join_us'))) {
     });
 }
 
+// funny dialog
+
+if (document.body.contains(document.querySelector('.dialog'))) {
+
+    const DIALOG = document.querySelector('.dialog');
+    const MAN = document.querySelector('.hello_animation');
+
+    console.log(MAN);
+
+    function showDialog() {
+        DIALOG.showModal();
+    };
+
+    function closeDialog() {
+        DIALOG.close();
+    };
+
+    setTimeout(showDialog, 10500);
+    setTimeout(closeDialog, 14000);
+
+    function goodbyeMan() {
+        MAN.classList.add('goodbye_animation');
+    }
+
+    setTimeout(goodbyeMan, 13000);
+
+    // if (DIALOG.hasAttribute('open')) {
+    // document.addEventListener('click', {
+    //     closeDialog();
+    // });
+
+    // function changeDisplay(item) {
+    //     item.css('display', 'block');
+    // }
+    
+    // setTimeout(changeDisplay(DIALOG), 1000);
+}
