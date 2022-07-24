@@ -368,14 +368,14 @@ $col) {
 
 // back
 
-.back {
-    text-align: left;
-    position: absolute;
-    z-index: -10000;
-    width: 100%;
-    height: 100%;
-    // background: linear-gradient(0deg, rgb(175, 175, 251), white);
-}
+// .back {
+//     text-align: left;
+//     position: absolute;
+//     z-index: -10000;
+//     width: 100%;
+//     height: 100%;
+//     // background: linear-gradient(0deg, rgb(175, 175, 251), white);
+// }
 
 /*section*/
 
@@ -675,62 +675,62 @@ $col) {
 
 
 // funny animation man
-.hello_animation {
-    // width: 100%;
-    // height: 100%;
-    position: fixed;
-    z-index: 1000;
-    left: 0px;
-    bottom: 0px;
-    transform: translateX(-100%) rotate(0deg);
-    animation-name: leftSlide;
-    animation-duration: 1200ms;
-    animation-fill-mode: both;
-    backface-visibility: hidden;
-    animation-delay: 9000ms;
-}
+// .hello_animation {
+//     // width: 100%;
+//     // height: 100%;
+//     position: fixed;
+//     z-index: 1000;
+//     left: 0px;
+//     bottom: 0px;
+//     transform: translateX(-100%) rotate(0deg);
+//     animation-name: leftSlide;
+//     animation-duration: 1200ms;
+//     animation-fill-mode: both;
+//     backface-visibility: hidden;
+//     animation-delay: 9000ms;
+// }
 
-@keyframes leftSlide {
-    0% {
-        transform: translateX(-150%) rotate(0deg);
-    }
-    100% {
-        transform: translateX(-40%) rotate(40deg);
-    }
-}
+// @keyframes leftSlide {
+//     0% {
+//         transform: translateX(-150%) rotate(0deg);
+//     }
+//     100% {
+//         transform: translateX(-40%) rotate(40deg);
+//     }
+// }
 
-.goodbye_animation {
-    animation-name: rightSlide;
-    animation-duration: 1200ms;
-    animation-fill-mode: both;
-    backface-visibility: hidden;
-}
+// .goodbye_animation {
+//     animation-name: rightSlide;
+//     animation-duration: 1200ms;
+//     animation-fill-mode: both;
+//     backface-visibility: hidden;
+// }
 
-@keyframes rightSlide {
-    0% {
-        transform: translateX(-40%) rotate(40deg);
-    }
-    100% {
-        transform: translateX(-150%) rotate(0deg);
-    }
-}
+// @keyframes rightSlide {
+//     0% {
+//         transform: translateX(-40%) rotate(40deg);
+//     }
+//     100% {
+//         transform: translateX(-150%) rotate(0deg);
+//     }
+// }
 
-.dialog {
-    font-size: 0.75rem;
-    position: fixed;
-    z-index: 1000;
-    top: auto;
-    left: 85px;
-    bottom: 200px;
-    padding: 4px;
-    border-radius: 10px;
-}
+// .dialog {
+//     font-size: 0.75rem;
+//     position: fixed;
+//     z-index: 1000;
+//     top: auto;
+//     left: 85px;
+//     bottom: 200px;
+//     padding: 4px;
+//     border-radius: 10px;
+// }
 
 
-.dialog::backdrop {
-    background: linear-gradient(2deg, blue, white);
-    opacity: .3;
-}
+// .dialog::backdrop {
+//     background: linear-gradient(2deg, blue, white);
+//     opacity: .3;
+// }
 
 .btn-list-item {
     display: none;
@@ -755,7 +755,7 @@ $col) {
         font-size: 4.5vw;
     }
     header {
-        z-index: 2000;
+        z-index: 2;
     }
 
     .about, .blog {
@@ -779,22 +779,21 @@ $col) {
         filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.3));
     }
 
-    .about_media {
-        display: none;
-    }
+    // .about_media {
+    //     display: none;
+    // }
 
-    .about_media_phone {
-        z-index: -2000;
-        margin-top: 200px;
-        display: block;
-        position: fixed;
-    }
+    // .about_media_phone {
+    //     z-index: -2000;
+    //     margin-top: 200px;
+    //     display: block;
+    //     position: fixed;
+    // }
     .menu-toggle-icon {
         display: block;
     }
 
     .menu {
-        display: none;
         position: absolute;
         font-size: -webkit-xxx-large;
         top: 0rem;
@@ -806,12 +805,21 @@ $col) {
         -webkit-backdrop-filter: blur(10px);
         border-radius: 13px;
         border: 1px solid;
-        /* opacity: 0;
-        transform: scale(0); */
+        opacity: 0;
+        transform: scale(0);
         transition: opacity .25s ease-in;
         a {
             text-shadow: none;
         }
+        .button_nest {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .menu.activated{
+        opacity: 1;
+        transform: scale(1);
     }
 
     .list {
@@ -820,7 +828,7 @@ $col) {
     }
 
     .menu > .list {
-        margin-top: 8rem;
+        margin-top: 0rem;
         flex-direction: column;
     }
 
@@ -839,7 +847,7 @@ $col) {
 
 @media (max-width:600px) {
     html {
-        background: url(/images/bg_sm_1.jpg) no-repeat bottom fixed; 
+        background: url(/images/bg_sm_1.svg) no-repeat bottom fixed; 
         }
 }
 
