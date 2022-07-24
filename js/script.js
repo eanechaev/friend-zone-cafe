@@ -1,18 +1,18 @@
 
 // jshint esversion: 6
 
-// if (document.body.contains(document.querySelector('.media'))) {
-//     const man = document.querySelector('.media');
+if (document.body.contains(document.querySelector('.media'))) {
+    const man = document.querySelector('.media');
 
-//     man.addEventListener('click', () => {
-//      let i = getRandomInt(17);
-//      man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="random funny image">';
-//     });
+    man.addEventListener('click', () => {
+     let i = getRandomInt(14);
+     man.innerHTML = '<img src="images/man_switcher/man_' + i + '.svg" class="media_image" alt="random funny image">';
+    });
     
-//     function getRandomInt(max) {
-//      return Math.floor(Math.random() * max);
-//     }
-// };
+    function getRandomInt(max) {
+     return Math.floor(Math.random() * max);
+    }
+}
 
 // Grab elements
 const selectElement = selector => {
@@ -102,29 +102,29 @@ if (document.body.contains(document.querySelector('.join_us'))) {
 
 // funny dialog
 
-if (document.body.contains(document.querySelector('.dialog'))) {
+// if (document.body.contains(document.querySelector('.dialog'))) {
 
-    const DIALOG = document.querySelector('.dialog');
-    const MAN = document.querySelector('.hello_animation');
+//     const DIALOG = document.querySelector('.dialog');
+//     const MAN = document.querySelector('.hello_animation');
 
-    console.log(MAN);
+//     console.log(MAN);
 
-    function showDialog() {
-        DIALOG.showModal();
-    };
+//     function showDialog() {
+//         DIALOG.showModal();
+//     };
 
-    function closeDialog() {
-        DIALOG.close();
-    };
+//     function closeDialog() {
+//         DIALOG.close();
+//     };
 
-    setTimeout(showDialog, 10500);
-    setTimeout(closeDialog, 14000);
+//     setTimeout(showDialog, 10500);
+//     setTimeout(closeDialog, 14000);
 
-    function goodbyeMan() {
-        MAN.classList.add('goodbye_animation');
-    }
+//     function goodbyeMan() {
+//         MAN.classList.add('goodbye_animation');
+//     }
 
-    setTimeout(goodbyeMan, 13000);
+//     setTimeout(goodbyeMan, 13000);
 
     // if (DIALOG.hasAttribute('open')) {
     // document.addEventListener('click', {
@@ -136,5 +136,5 @@ if (document.body.contains(document.querySelector('.dialog'))) {
     // }
     
     // setTimeout(changeDisplay(DIALOG), 1000);
-}
+
 
