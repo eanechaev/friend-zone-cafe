@@ -866,12 +866,12 @@ $col) {
 
 @media (max-width:600px) {
     html {
-        background: url(/images/bg_sm_1.svg) no-repeat bottom fixed; 
+        background: url(/images/bg_sm_1.jpg) no-repeat bottom fixed; 
         }
 }
 
-@media (max-height:610px) {
-    html {
-        background: url(/images/bg_xs_1.svg) no-repeat bottom fixed; 
-        }
-}
+// @media (max-height:610px) {
+//     html {
+//         background: url(/images/bg_xs_1.svg) no-repeat bottom fixed; 
+//         }
+// }
