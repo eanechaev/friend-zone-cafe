@@ -6,26 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Просто закупки</title>
     <link rel="shortcut icon" type="image/x-icon" href="icons/favicons/drinking_man.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8bbff8f4a8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="container">
-                <div class="row">
-                    <a href="/pro_zakupki/index.html" class="logo">Просто <u>закупки</u></a>
-                    <nav>
-                        <a class="about" href="/pro_zakupki/about.html">О проекте</a>
-                        <a class="blog" href="/pro_zakupki/blog.html">Блог</a>
-                        <button class="btn btn-modal" type="button">Предложить тему</button>
-                    </nav>
-                </div>
+                <nav class="navbar">
+                    <a href="./index.html" class="logo">Просто <u>закупки</u></a>
+
+                    <div class="menu" id="menu">
+                        <ul class="list">
+                            <li class="list-item">
+                                <a class="about" href="./about.html">О проекте</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="blog" href="./blog.html">Блог</a>
+                            </li>
+                            <li>
+                                <button class="btn btn-modal" type="button">Предложить тему</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <button class="btn menu-toggle-icon" id="menu-toggle-icon">
+                        <i class="ri-menu-3-line open-menu-icon"></i>
+                        <i class="ri-close-line close-menu-icon"></i>
+                    </button>
+                </nav>
             </div>
         </header>
+        <!-- <div class="back"></div> -->
         <div class="overlay">
             <div class="modal">
              <div class="modal__close">&times;</div>

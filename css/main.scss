@@ -9,9 +9,16 @@
 
 html {
     height: 100%;
-    font-size: 1.1rem;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.15rem;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 1px;
+    // font-family: 'Pangolin', cursive;
     line-height: 1.3;
+    background: url(/images/bg_1.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
@@ -25,10 +32,10 @@ body {
     height: 100%;
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
-   }
+}
 
 header {
-    background-color: rgba(45,45,45,0.1);
+    background-color: rgba(126, 125, 125, 0.1);
     padding: 0.5em 0em;
 }
 
@@ -81,6 +88,10 @@ textarea {
  resize: none;
 }
 
+h1 span {
+    color: #0A36CF;
+}
+
 .footer {
  -webkit-box-flex: 0;
  -ms-flex-positive: 0;
@@ -98,7 +109,7 @@ textarea {
     -ms-flex-direction: column;
     flex-direction: column;
     min-width: 320px;
-    height: 100vh;
+    height: 100%;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -106,7 +117,7 @@ textarea {
 }
    
 .container {
-    max-width: 1080px;
+    max-width: 1280px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -137,7 +148,9 @@ textarea {
 }
    
 .row-center {
-    margin-top: 3em;
+    margin-right: 10rem;
+    font-size: 1.3rem;
+    margin-top: 4em;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -167,8 +180,8 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    // -ms-flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 0 0.5em;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -216,6 +229,23 @@ nav a {
     border: 2px solid currentColor;
     color: #111;
     background-color: #fff;
+}
+
+// menu
+
+ul {
+    list-style: none;
+    display: -webkit-inline-flex;
+    li {
+        margin: auto;
+        padding: 0 0.5em;
+    }
+}
+
+.menu-toggle-icon {
+    display: none;
+    padding: 0.45rem;
+    padding-bottom: 0.16rem;
 }
 
 /*special button*/ 
@@ -335,6 +365,17 @@ $col) {
     color: rgba($color: #000000, $alpha: 0.6);
 }
 
+
+// back
+
+.back {
+    text-align: left;
+    position: absolute;
+    z-index: -10000;
+    width: 100%;
+    height: 100%;
+    // background: linear-gradient(0deg, rgb(175, 175, 251), white);
+}
 
 /*section*/
 
@@ -691,6 +732,10 @@ $col) {
     opacity: .3;
 }
 
+.btn-list-item {
+    display: none;
+}
+
 @media (max-width:800px) {
     .col {
      -webkit-box-flex: 0;
@@ -712,15 +757,13 @@ $col) {
     header {
         z-index: 2000;
     }
-    nav {
-        display: none;
-    }
 
     .about, .blog {
         margin: auto;
     }
     .row-center {
-        margin: -4em 0em 0em;
+        margin: 12vh auto;
+        font-size: 5vw;
         z-index: 1;
     }
     .modal {
@@ -746,5 +789,62 @@ $col) {
         display: block;
         position: fixed;
     }
+    .menu-toggle-icon {
+        display: block;
+    }
 
+    .menu {
+        display: none;
+        position: absolute;
+        font-size: -webkit-xxx-large;
+        top: 0rem;
+        right: 0rem;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 13px;
+        border: 1px solid;
+        /* opacity: 0;
+        transform: scale(0); */
+        transition: opacity .25s ease-in;
+        a {
+            text-shadow: none;
+        }
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu > .list {
+        margin-top: 8rem;
+        flex-direction: column;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .btn-list-item {
+        padding: 0.25em 0.5em;
+        display: block;
+        &:hover {
+            color: #0A36CF;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        background: url(/images/bg_sm_1.svg) no-repeat bottom fixed; 
+        }
+}
+
+@media (max-height:610px) {
+    html {
+        background: url(/images/bg_xs_1.svg) no-repeat bottom fixed; 
+        }
 }

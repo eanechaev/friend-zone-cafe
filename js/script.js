@@ -1,15 +1,16 @@
-if (document.body.contains(document.querySelector('.media'))) {
-    const man = document.querySelector('.media');
 
-    man.addEventListener('click', () => {
-     let i = getRandomInt(17);
-     man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="random funny image">';
-    });
+// if (document.body.contains(document.querySelector('.media'))) {
+//     const man = document.querySelector('.media');
+
+//     man.addEventListener('click', () => {
+//      let i = getRandomInt(17);
+//      man.innerHTML = '<img src="images/man_' + i + '.svg" class="shadow" alt="random funny image">';
+//     });
     
-    function getRandomInt(max) {
-     return Math.floor(Math.random() * max);
-    }
-};
+//     function getRandomInt(max) {
+//      return Math.floor(Math.random() * max);
+//     }
+// };
 
 // MODAL
 
@@ -96,3 +97,4 @@ if (document.body.contains(document.querySelector('.dialog'))) {
     
     // setTimeout(changeDisplay(DIALOG), 1000);
 }
+
