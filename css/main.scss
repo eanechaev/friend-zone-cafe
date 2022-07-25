@@ -14,7 +14,7 @@ html {
     letter-spacing: 1px;
     // font-family: 'Pangolin', cursive;
     line-height: 1.3;
-    background: url('https://eanechaev.github.io/pro_zakupki/images/bg_1.jpg') no-repeat center center fixed; 
+    background: url('https://eanechaev.github.io/pro_zakupki/images/bg_1.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -869,13 +869,19 @@ $col) {
 
 @media (max-width:600px) {
     html {
-        background: url('https://eanechaev.github.io/pro_zakupki/images/bg_sm_1.jpg') no-repeat bottom fixed;
+        background: url('https://eanechaev.github.io/pro_zakupki/images/bg_sm_1_optimal.jpg') no-repeat bottom fixed;
         letter-spacing: normal;
         }
 }
 
-// @media (max-height:610px) {
-//     html {
-//         background: url(images/bg_xs_1.svg) no-repeat bottom fixed; 
-//         }
-// }
+@media (max-height:600px) {
+    html {
+        background: url('https://eanechaev.github.io/pro_zakupki/images/bg_1_height.jpg') no-repeat bottom fixed; 
+        }
+}
+
+@media (min-width:600px) and (max-width: 800px) {
+    .bird {
+        display: none;
+        }
+}
