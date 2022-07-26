@@ -235,7 +235,7 @@ nav a {
 
 .bird{
     position: absolute;
-    left: 40vw;
+    left: 42vw;
     top: 45px;
 }
 
@@ -728,7 +728,8 @@ $col) {
     display: none;
 }
 
-@media (max-width:800px) {
+@media (max-width:650px) {
+
     .col {
      -webkit-box-flex: 0;
      -ms-flex: 0 1 100%;
@@ -857,7 +858,7 @@ $col) {
         object-fit: contain;
     }
     .bird{
-        top:20px;
+        top:4vh;
         img{
             width: 80%;
         }
@@ -865,11 +866,9 @@ $col) {
 }
 
 
-
-
-@media (max-width:600px) {
+@media (max-width:950px) {
     html {
-        background: url('https://eanechaev.github.io/pro_zakupki/images/bg_sm_1_optimal.jpg') no-repeat bottom fixed;
+        background: url('https://eanechaev.github.io/pro_zakupki/images/bg_sm_1_best.jpg') no-repeat bottom fixed;
         letter-spacing: normal;
         }
 }
@@ -880,7 +879,7 @@ $col) {
         }
 }
 
-@media (min-width:600px) and (max-width: 800px) {
+@media (max-width:350px) and (max-height: 700px) {
     .bird {
         display: none;
         }
