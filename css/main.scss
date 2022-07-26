@@ -873,7 +873,7 @@ $col) {
         }
 }
 
-@media (max-height:650px) {
+@media (max-height:650px) and (min-height:300px) {
     html {
         font-size: 2.8vh;
         background: url('https://eanechaev.github.io/pro_zakupki/images/bg_1_height_man.jpg') no-repeat bottom fixed; 
@@ -884,10 +884,24 @@ $col) {
             width: 60%;
         }
     }
+    .row-center {
+        margin: 9vh auto;
+        z-index: 1;
+    }
 }
 
 @media (max-width:350px) and (min-height: 700px) {
     .bird {
         display: none;
         }
+}
+
+@media (max-height:300px) {
+    html {
+        font-size: 2.8vh;
+        background: url('https://eanechaev.github.io/pro_zakupki/images/bg_1_height.jpg') no-repeat bottom fixed;; 
+        }
+    .bird {
+            display: none;
+    }
 }
